@@ -5,7 +5,7 @@ public class Token {
     private Valor valor;
     private int linha;
     private int coluna;
-    private int tamanhoToken;
+    private int tokenSize;
 
     public Token(Classe classe) {
         this.classe = classe;
@@ -52,12 +52,12 @@ public class Token {
         this.coluna = coluna;
     }
 
-    public int getTamanhoToken() {
-        return tamanhoToken;
+    public int gettokenSize() {
+        return tokenSize;
     }
 
-    public void setTamanhoToken(int tamanhoToken) {
-        this.tamanhoToken = tamanhoToken;
+    public void settokenSize(int tokenSize) {
+        this.tokenSize = tokenSize;
     }
 
     @Override
@@ -67,7 +67,7 @@ public class Token {
                 ", valor=" + valor +
                 ", linha=" + linha +
                 ", coluna=" + coluna +
-                ", tamanhoToken=" + tamanhoToken +
+                ", tokenSize=" + tokenSize +
                 '}';
     }
 }
